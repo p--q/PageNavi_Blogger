@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class='blog-pager' id='blog-pager'></div>        
+        <link href="pagenavi.css" rel="stylesheet" type="text/css"/>
+        <script src="paginavi.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            //デフォルト値を変更したいときは以下のコメントアウトをはずして設定する。
+            //PageNavi_Blogger.defaults["perPage"] = 10 //1ページあたりの投稿数。
+            //PageNavi_Blogger.defaults["numPages"] = 5 // ページナビに表示するページ数。
+            //PageNavi_Blogger.defaults["window_width"] = 320 // ウィンドウ幅がこの幅px以下の時はページナビを2行にする。
+            PageNavi_Blogger.all(["blog-pager","blog-pager2"]);  // ページナビの起動。引き数にHTMLの要素のidを配列で入れる。
+        </script>
+    </body>
+</html>
